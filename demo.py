@@ -105,7 +105,7 @@ while(True):
 		if value.item() > 0.4 and indices < 25 and cooldown == 0: 
 			print('Gesture:', ges[indices], '\t\t\t\t\t\t Value: {:.2f}'.format(value.item()))
 			cooldown = 16 
-			"""
+			#"""
 			if ges[indices] == "Stop Sign":
 				print("super")	
 				hotkey('winleft')
@@ -127,6 +127,9 @@ while(True):
 			elif ges[indices] == "Sliding Two Fingers Down":
 				print("Lower Workspace")	
 				hotkey('winleft','pgdn')
+
+		#repurpose some of the commands for the other gestures. You might also have to or could assign or edit some of the system shortcut command.
+		
 			elif ges[indices] == "Pushing Hand Away":
 				print("Zoom In")	
 				hotkey('ctrl','+')
@@ -136,7 +139,7 @@ while(True):
 			elif ges[indices] == "Shaking Hand":
 				print("Opening Resource Monitor...")
 				hotkey('ctrl','shift','`')
-			"""
+			#"""
 		pred = indices
 		imgs = imgs[1:]
 
